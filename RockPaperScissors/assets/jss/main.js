@@ -1,6 +1,8 @@
 const icons = document.getElementById("icons")
 const score = document.getElementById("score")
 const restart = document.getElementById("restart")
+const sonGokusChoice = document.getElementById("sonGokuChoice")
+const vegetasChoice = document.getElementById("vegetaChoice")
 
 const items = ["rock", "paper", "scissors"]
 
@@ -58,12 +60,11 @@ function whoWins() {
     
     if (sonGokuPoints == 3) {
         alert("Son Goku wins!");
-        sonGokuPoints = 0
-        vegetaPoints = 0
+        refresh()
+
     } else if (vegetaPoints == 3) {
         alert("Vegeta wins!");
-        sonGokuPoints = 0
-        vegetaPoints = 0
+        refresh()
     }
 }
 
@@ -78,8 +79,17 @@ function fight(sonGokuItem) {
         sonGokuScissors()
     }
 
-    score.innerText = `${sonGokuPoints} : ${vegetaPoints}`
+    score.innerText = `${sonGokuPoints} - ${vegetaPoints}`
+
     whoWins()
+}
+
+function refresh() {
+    sonGokuPoints = 0
+    vegetaPoints = 0
+    score.innerText = `${sonGokuPoints} - ${vegetaPoints}`
+    sonGokusChoice.innerText = ""
+    vegetasChoice.innerText = ""
 }
 
 icons.addEventListener("click", (event) => {
@@ -97,10 +107,11 @@ icons.addEventListener("click", (event) => {
     }
 
     fight(sonGokuItem)
+
+    sonGokusChoice.innerText = `Son Goku choosed:\n${sonGokuItem.toUpperCase()}`
+    vegetasChoice.innerText = `Vegeta choosed:\n${vegetaItem.toUpperCase()}`
 })
 
 restart.addEventListener("click", (event) => {
-    sonGokuPoints = 0
-    vegetaPoints = 0
-    score.innerText = `${sonGokuPoints} : ${vegetaPoints}`
+    refresh()
 })

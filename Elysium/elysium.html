@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elysium Systems</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/main.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Elysium Board Systems</h1>
+    </header>
+
+    <main>
+        <section>
+            <h3>Credits</h3>
+            <p id="credits"></p>
+        </section>
+        
+        <section id="systemOverview">
+            <h3>Systemübersicht</h3>
+            <button id="filterButton">Kritische Systeme filtern: aus</button>
+            <table id="systems">
+                <thead>
+                    <tr>
+                        <th>System</th>
+                        <th>Status</th>
+                        <th>Reparatur</th>
+                    </tr>
+                </thead>
+
+                <tbody id="systemsBody"></tbody>
+            </table>
+        </section>
+
+        <section>
+            <h3>Reparatur</h3>
+            <p id="repairCosts"></p>
+        </section>
+
+        <section>
+            <h3>Energiebilanz</h3>
+            <button id="energyButton">Energieverbrauch anzeigen</button>
+            <table id="energy">
+                <thead id="energyHead"></thead>
+
+                <tbody id="energyBody"></tbody>
+            </table>           
+        </section>
+    </main>
+</body>
+</html>
