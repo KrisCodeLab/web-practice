@@ -46,6 +46,7 @@ let systems = [
 
 const systemTable = document.getElementById("systemsBody")
 const energyTable = document.getElementById("energy")
+const statisticsList = document.getElementById("statistic")
 const yourCredits = document.getElementById("credits")
 
 const filterButton = document.getElementById("filterButton")
@@ -114,9 +115,9 @@ function createRepairButton(tableRow, system){
     }
 }
 
-function buildTable (list, system, firstHead, secondHead) {
+function buildTable (table, system, firstHead, secondHead) {
     const tableRow = document.createElement("tr")
-    list.append(tableRow)
+    table.append(tableRow)
 
     const tdFirst = document.createElement("td")
     tdFirst.textContent = system[firstHead]
@@ -142,7 +143,26 @@ function refreshSystems (table, firstHead, secondHead) {
     }
 
     table.forEach(element => {buildTable(systemTable, element, firstHead, secondHead)});
+
+    statistics()
 }
+
+function statistics() {
+    statisticsList.replaceChildren();
+
+    const statusCounter = {} 
+
+    for (const system of systems) {
+        statusCounter[system.status] = (statusCounter[system.status] || 0) + 1
+    }
+
+    Object.entries(statusCounter).forEach(([key, value]) => {
+        const entry = document.createElement("li")
+        entry.textContent = `${value} Systeme befinden sich im Zustand: "${key}"`
+        statisticsList.append(entry)
+    });
+}
+
 
 // ########## LISTENER ##########
 
