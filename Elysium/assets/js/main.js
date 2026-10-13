@@ -158,7 +158,12 @@ function statistics() {
 
     Object.entries(statusCounter).forEach(([key, value]) => {
         const entry = document.createElement("li")
-        entry.textContent = `${value} Systeme befinden sich im Zustand: "${key}"`
+        if (value > 1 || value < 1) {
+            entry.textContent = `${value} Systeme befinden sich im Zustand: "${key}"`
+        } else {
+            entry.textContent = `${value} System befindet sich im Zustand: "${key}"`
+        }
+        
         statisticsList.append(entry)
     });
 }
