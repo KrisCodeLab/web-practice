@@ -1,0 +1,95 @@
+/*NAVBAR*/
+#home {
+    display: inline-block;
+    padding: 0 80px 0 80px;
+    margin: 40px 0 40px 0;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+#recipe {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    overflow-wrap: anywhere;
+}
+
+#recipe img {
+    border-radius: 20px;
+    width: 100%;
+    object-fit: cover;
+}
+
+#preparation,
+#ingredientsContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+#buttonContainer {
+    display: flex;
+    gap: 10px;
+}
+
+#preparation,
+#ingredients {
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    padding-top: 0;
+    padding-bottom: 5px;
+    margin-top: 20px;
+    border: 1px solid lightgray;
+    flex-grow: 1;
+}
+
+#ingredientsTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#ingredientsTable td:first-child{
+    text-align: left;
+}
+
+#ingredientsTable td:nth-child(2) {
+    text-align: right;
+    white-space: nowrap;
+    color: rgb(109, 109, 109);
+}
+
+#ingredientsTable td {
+    border-top: 1px solid lightgray;
+    padding: 10px;
+}
+
+#preparation {
+    grid-column: 1 / -1; 
+}
+
+ol {
+    padding-left: 0;
+    list-style: none;
+    counter-reset: step;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    counter-increment: step;
+    padding: 10px;
+}
+
+li::before {
+    content: counter(step);
+    display: inline-grid;
+    place-items: center;
+    background-color: #1F4A3A;
+    color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 15px;
+    flex-shrink: 0;
+}

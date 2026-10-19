@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahlzeit</title>
+    <link rel="stylesheet" href="assets/css/common.css">    
+    <link rel="stylesheet" href="assets/css/index.css">
+    <script src="assets/js/index.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+                <a id="logoContainer" href="#">
+                    <div id="logo"></div>
+                    <h2>Mahlzeit</h2>
+                </a>
+        
+            <div id="navLinks">
+                <a href="#">Entdecken</a>
+                <a href="#">Kategorien</a>
+                <a href="#">Zufallsrezept</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <h1>Was kochen wir heute?</h1>
+            <p>Suche nach einem Gericht oder lass dich überraschen.</p>
+            <form id="searchContainer" role="search">
+                <input id="searchbar" name="searchValue" type="search"
+                    aria-label="Rezepte suchen" placeholder="z. B. Arrabiata">
+
+                <button class="redButton" type="submit">
+                    <img src="assets/img/magnifying-glass.svg" alt="">Suchen
+                </button>
+
+                <button class="greyButton" type="button">
+                    <img src="assets/img/random.svg" alt="">Überrasch mich
+                </button>
+            </form>
+        </section>
+
+        <div id="filterButtons">
+            <button class="filterButton activeButton" id="all">Alle</button>
+            <button class="filterButton" id="beef">Beef</button>
+            <button class="filterButton" id="chicken">Chicken</button>
+            <button class="filterButton" id="dessert">Dessert</button>
+            <button class="filterButton" id="pasta">Pasta</button>
+            <button class="filterButton" id="seafood">Seafood</button>
+            <button class="filterButton" id="vegetarian">Vegetarian</button>
+        </div>
+
+        <section id="overviewContainer">
+            <h2>Gerichte</h2>
+            <div id="mealOverview">
+
+                <article class="mealCard">
+                    <img src="assets/img/arrabiata.jpg" alt="bild">
+                    <div class="shortDescription">
+                        <div class="keywords">
+                            <p>Italian</p>
+                            <p>Vegetarian</p>
+                        </div>
+                        <h3>Spicy Arrabiata Penne</h3>
+                        <a href="detail.html">Rezept ansehen →</a>
+                    </div>
+                </article>
+
+                <article class="mealCard">
+                    <img src="assets/img/arrabiata.jpg" alt="bild">
+                    <div class="shortDescription">
+                        <div class="keywords">
+                            <p>Italian</p>
+                            <p>Vegetarian</p>
+                        </div>
+                        <h3>Spicy ArrabiataArrabiaabiataArrabiataArra Arrabiata ArrabiataArrabiataArrabiataArrabiataArrabiataArrabiata</h3>
+                        <a href="detail.html">Rezept ansehen →</a>
+                    </div>
+                </article>
+
+                <article class="mealCard">
+                    <img src="assets/img/arrabiata.jpg" alt="bild">
+                    <div class="shortDescription">
+                        <div class="keywords">
+                            <p>Italian</p>
+                            <p>Vegetarian</p>
+                        </div>
+                        <h3>Spicy Arrabiata Penne</h3>
+                        <a href="detail.html">Rezept ansehen →</a>
+                    </div>
+                </article>
+
+                <article class="mealCard">
+                    <img src="assets/img/arrabiata.jpg" alt="bild">
+                    <div class="shortDescription">
+                        <div class="keywords">
+                            <p>Italian</p>
+                            <p>Vegetarian</p>
+                        </div>
+                        <h3>Spicy Arrabiata Penne</h3>
+                        <a href="detail.html">Rezept ansehen →</a>
+                    </div>
+                </article>
+
+                <article class="mealCard">
+                    <img src="assets/img/arrabiata.jpg" alt="bild">
+                    <div class="shortDescription">
+                        <div class="keywords">
+                            <p>Italian</p>
+                            <p>Vegetarian</p>
+                        </div>
+                        <h3>Spicy Arrabiata Penne</h3>
+                        <a href="detail.html">Rezept ansehen →</a>
+                    </div>
+                </article>
+
+                <article class="mealCard">
+                    <img src="assets/img/arrabiata.jpg" alt="bild">
+                    <div class="shortDescription">
+                        <div class="keywords">
+                            <p>Italian</p>
+                            <p>Vegetarian</p>
+                        </div>
+                        <h3>Spicy Arrabiata Penne</h3>
+                        <a href="detail.html">Rezept ansehen →</a>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Rezeptdaten von <a href="https://www.themealdb.com/">TheMealDB.com</a></p>
+    </footer>
+</body>
+</html>

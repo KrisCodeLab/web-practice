@@ -1,0 +1,97 @@
+/*HERO*/
+#hero {
+    font-size: x-large;
+}
+
+#searchContainer {
+    display: flex;
+    gap: 10px;
+}
+
+#searchbar {
+    width: 500px;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    padding: 10px 20px 10px 20px;
+    font-size: 1rem;
+}
+
+#searchContainer img {
+    height: 1rem;
+    width: auto;
+}
+
+/*FILTERBUTTONS*/
+#filterButtons {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.filterButton {
+    transition: border-color 0.2s, box-shadow 0.2s;
+    background-color: white;
+    border: 1px solid lightgray;
+    border-radius: 20px;
+    padding: 10px 20px 10px 20px;
+    font-size: 1rem;
+}
+
+.filterButton:hover {
+    border-color: #1F4A3A;
+    box-shadow: 0 0 0 2px #1F4A3A;
+    cursor: pointer;
+}
+
+.filterButton:focus-visible {
+    outline: 2px solid #1F4A3A;
+    outline-offset: 3px;
+}
+
+.activeButton {
+    background-color: #1F4A3A;
+    color: white;
+}
+
+/*OVERVIEW*/
+#overviewContainer h2 {
+    font-size: 2rem;
+}
+
+#mealOverview {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 30px;
+}
+
+.mealCard {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid lightgray;
+    border-radius: 20px;
+}
+
+.mealCard img {
+    border-radius: 20px 20px 0 0;
+    width: 100%;
+    object-fit: cover;
+}
+
+.shortDescription {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 15px 15px 25px 15px;
+    border-radius: 0 0 20px 20px;
+    overflow-wrap: anywhere;
+    min-height: 160px;
+    flex-grow: 1;
+}
+
+.shortDescription a {
+    margin-top: auto;
+    text-decoration: none;
+    color: black;
+}
