@@ -67,6 +67,7 @@ input {
 .greyButton {
     background-color: #F4F6F2;
     border: 2px solid lightgray;
+    color: black;
 }
 
 .redButton,

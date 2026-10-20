@@ -1,22 +1,19 @@
-const recipeSection = document.getElementById("recipe")
 const imgContainer = document.getElementById("imgContainer")
-const ingredientsContainer = document.getElementById("ingredientsContainer")
 const keywordContainer = document.getElementsByClassName("keywords")
 const mealNameH1 = document.getElementById("mealName")
 const buttonContainer = document.getElementById("buttonContainer")
-const ingredientsDetailContainer = document.getElementById("ingredients")
 const ingredientsTable = document.getElementById("ingredientsTable")
 const preparationList = document.getElementById("preparationList")
 
 
 // Params prüfen!!
 const params = new URLSearchParams(window.location.search).get("id")
-
 let mealData = {}
 
-async function getRecipeById() {
+
+async function requestAPI(param) {
     try {
-        const response = await fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${Number(params)}`)    
+        const response = await fetch(`https://www.themealdb.com/api/json/v1/1/${param}`)    
         if (!response.ok)     
             throw new Error("Fehler beim Response")
         const data = await response.json()
@@ -26,19 +23,28 @@ async function getRecipeById() {
     }
 }
 
-function loadMealData() {
-
-    // Hier auf Übergebene Suchparameter prüfen
-    getRecipeById().then(data =>{
+function getRecipe(param) {
+    requestAPI(param).then(data =>{
         if (data != undefined && data.meals != null) {
             mealData = data.meals[0]
             console.log(mealData)
         } else {
             mealData = {}
         }
-        
         buildPage()
     })
+}
+
+function loadMealData() {
+
+    if (params == "random.php") {
+        const apiParams = "random.php"
+        getRecipe(apiParams)
+    } else {
+
+        const apiParams = `lookup.php?i=${Number(params)}`
+        getRecipe(apiParams)
+    }
 } 
 
 function buildPage() {
@@ -54,7 +60,7 @@ function buildPage() {
         const strIngredient = `strIngredient${i}`
         const strMeasure = `strMeasure${i}`
 
-        if (mealData[strIngredient] != "")
+        if (mealData[strIngredient] != "" && mealData[strIngredient] != null)
             mealIngredients.push([mealData[strIngredient], mealData[strMeasure]])
     }
 
@@ -105,8 +111,6 @@ function buildPage() {
         listItem.innerText = element
         preparationList.append(listItem)
     });
-
-
 }
 
 loadMealData()

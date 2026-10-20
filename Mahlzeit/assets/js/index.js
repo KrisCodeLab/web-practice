@@ -1,13 +1,15 @@
 const alphabet = "abcdefghijklmnopqrstuvwxyz"
 let letterIndex
 let mealArray = []
+let currentFilter = "All"
 
+const filterButtonsContainer = document.getElementById("filterButtons") 
 const mealOverview = document.getElementById("mealOverview")
 const loadMoreButton = document.getElementById("loadMore")
 
-async function getData(searchLetter) {
+async function requestAPI(apiParams) {
     try {
-        const response = await fetch(`https://www.themealdb.com/api/json/v1/1/search.php?f=${searchLetter}`)    
+        const response = await fetch(`https://www.themealdb.com/api/json/v1/1/${apiParams}`)    
         if (!response.ok)     
             throw new Error("Fehler beim Response")
         const data = await response.json()
@@ -17,32 +19,65 @@ async function getData(searchLetter) {
     }
 }
 
-function loadData(i) {
-
-    if (mealArray.length == 0) {
-        if (letterIndex == undefined) {
-            letterIndex = 0
+function loadCategoryData(){
+    requestAPI(`list.php?c=list`).then(data =>{
+        if (data != undefined && data.meals != null) {
+            const categories = data.meals
+            categories.forEach(element => {
+                const filterButton = document.createElement("button")
+                filterButton.innerText = element["strCategory"]
+                filterButton.classList.add("filterButton")
+                filterButton.id = element["strCategory"]
+                filterButtonsContainer.append(filterButton)
+            });
         } else {
-            letterIndex++
-        }
-
-        if (letterIndex > 25) {
-            mealArray = []
             return
-        } 
+        }
+    })
+}
 
-        getData(alphabet[letterIndex]).then(data =>{
+function loadMealData(i, id) {
+
+    if (id == "All") {
+        console.log("es ist in All")
+        if (mealArray.length == 0) {
+            if (letterIndex == undefined) {
+                letterIndex = 0
+            } else {
+                letterIndex++
+            }
+
+            if (letterIndex > 25) {
+                mealArray = []
+                return
+            } 
+
+            requestAPI(`search.php?f=${alphabet[letterIndex]}`).then(data =>{
+                if (data != undefined && data.meals != null) {
+                    mealArray = data.meals.reverse()
+                    console.log(mealArray)
+                    buildMealOverview(i)
+                } else {
+                    mealArray = []
+                    loadMealData(i, id)
+                }
+            })
+        }
+    } else {
+        letterIndex = undefined
+        requestAPI(`filter.php?c=${id}`).then(data =>{
             if (data != undefined && data.meals != null) {
                 mealArray = data.meals.reverse()
                 console.log(mealArray)
                 buildMealOverview(i)
             } else {
                 mealArray = []
-                loadData(i)
             }
         })
-    } 
-}
+
+    }
+} 
+
 
 function buildMealOverview(j) {
     for (let i = j; i <= 5; i++) {
@@ -55,7 +90,7 @@ function buildMealOverview(j) {
                 mealArray = []
                 return
             } 
-            return loadData(i)            
+            return loadMealData(i)            
         }
     }
 }    
@@ -67,6 +102,12 @@ function buildMealCard(mealData) {
     const mealThumb = mealData["strMealThumb"]
     const mealCountry = mealData["strCountry"]
     const mealCategory = mealData["strCategory"]
+
+    // if (id == "All") {
+    //     mealCategory = mealData["strCategory"]
+    // } else {
+    //     mealCategory = id
+    // }
 
     const newArticle = document.createElement("article")
     newArticle.classList.add("mealCard")
@@ -109,6 +150,25 @@ loadMoreButton.addEventListener("click", (event)=>{
     buildMealOverview(0)
 })
 
+filterButtonsContainer.addEventListener("click", (event) => {
+    if (event.target.id != "filterButtons" && event.target.id != currentFilter) {
+        mealOverview.replaceChildren()
+
+        const activeFilter = document.getElementsByClassName("activeButton")
+        activeFilter[0].classList.remove("activeButton")
+        
+        currentFilter = event.target.id     
+        event.target.classList.add("activeButton")
+
+        console.log(event.target.id)
+        
+        loadMealData(0, event.target.id)
+        
+    }
+})
+
+
 /************** MAIN **************/
-loadData(0)
+loadCategoryData()
+loadMealData(0, "All")
 
