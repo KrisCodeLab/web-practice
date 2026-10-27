@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Vito Schnurrleone",
+    "rank": "Don",
+    "speciality": "Strategy",
+    "avatarURL": "http://localhost:8080/api/avatar?name=Vito Schnurrleone",
+    "status": "active"
+  },
+  {
+    "id": 2,
+    "name": "Meowchael Schnurrleone",
+    "rank": "Capo",
+    "speciality": "Strategy",
+    "avatarURL": "http://localhost:8080/api/avatar?name=Meowchael Schnurrleone",
+    "status": "active"
+  },
+  {
+    "id": 3,
+    "name": "Tony Clawprano",
+    "rank": "Consigliere",
+    "speciality": "Finance",
+    "avatarURL": "http://localhost:8080/api/avatar?name=Tony Clawprano",
+    "status": "active"
+  }
+]

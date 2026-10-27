@@ -1,0 +1,61 @@
+@font-face {
+    font-family: "The Godfather";
+    src: url("../fonts/the-godfather.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    margin: 0;
+    font-family: "The Godfather";
+    background-color: #3c4733;
+}
+
+h1, h2, h3, p, a {
+    text-decoration: none;
+    color: white;
+}
+
+/*NAVBAR*/
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+#navbar a {
+    font-size: xx-large;
+}
+
+
+#logoContainer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+}
+
+#logo {
+    border-radius: 100%;
+    width: 60px;
+    height: 60px;
+}
+
+#navLinks {
+    display: flex;
+    gap: 25px;
+}
+
+/*HERO*/
+#hero {
+    color: white;
+    background-image: url("../img/catfather-hero.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 300px;
+    aspect-ratio: auto;
+}

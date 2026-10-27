@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/common.css"> 
+    <link rel="stylesheet" href="assets/css/new-member.css">
+    <script src="assets/js/new-member.js" type="module" defer></script>
+    <title>The Catfather</title>
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <a id="logoContainer"href="index.html">
+                <img id="logo" src="http://localhost:8080/api/avatar?name=Catfather" alt="logo">
+                <h2>The Catfather *</h2>
+            </a>
+
+            <div id="navLinks">
+                <a href="index.html">Mitglieder</a>
+                <a href="new-member.html">Neues Mitglied</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div>
+                <h1>Willkommen in der Familie</h1>                
+                <h2>Ich werde dir ein Angebot machen, das du nicht ablehnen kannst.</h2>
+                <p>
+                    Fülle das Formular aus, um ein neues Mitglied der Organisation zu registrieren.
+                </p>
+            </div>
+        </section>   
+        
+        <section id="memberSection">
+            <h3>Mitgliedsdaten</h3>
+
+            <form id="memberForm">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="z.B. Donny Brasco">
+
+                <label for="rank">Rang</label>
+                <select id="rank" name="rank">
+                    <option value="">Bitte auswählen</option>
+                    <option value="Don">Don</option>
+                    <option value="Capo">Capo</option>
+                    <option value="Consigliere">Consigliere</option>
+                </select>
+
+                <label for="speciality">Spezialgebiet</label>
+                <select id="speciality" name="speciality">
+                    <option value="">Bitte auswählen</option>
+                    <option value="Strategy">Strategie</option>
+                    <option value="Logistic">Logistik</option>
+                    <option value="Finance">Finanzen</option>
+                </select>
+
+                <button type="submit">Mitglied Anlegen</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,25 @@
+/*OVERVIEW*/
+#memberHeaderCont {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#memberSection {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 30px;
+}
+
+.memberCard {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    background-color: #0a2125;
+}
+
+.memberCard img {
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+}

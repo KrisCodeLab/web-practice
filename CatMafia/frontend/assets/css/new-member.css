@@ -1,0 +1,13 @@
+/*MEMBERFORM*/
+
+#memberSection {
+    display: flex;
+    flex-direction: column;
+}
+
+#memberForm {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+

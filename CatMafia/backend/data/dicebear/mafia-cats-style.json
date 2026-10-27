@@ -1,0 +1,2754 @@
+{
+  "canvas": {
+    "width": 120,
+    "height": 120,
+    "elements": [
+      {
+        "type": "component",
+        "name": "background"
+      },
+      {
+        "type": "component",
+        "name": "outfit"
+      },
+      {
+        "type": "component",
+        "name": "head"
+      },
+      {
+        "type": "component",
+        "name": "scar"
+      },
+      {
+        "type": "component",
+        "name": "eyes"
+      },
+      {
+        "type": "component",
+        "name": "muzzle"
+      },
+      {
+        "type": "component",
+        "name": "accessory"
+      },
+      {
+        "type": "component",
+        "name": "hat"
+      }
+    ]
+  },
+  "components": {
+    "background": {
+      "width": 120,
+      "height": 120,
+      "probability": 100,
+      "variants": {
+        "noir": {
+          "elements": [
+            {
+              "type": "element",
+              "name": "rect",
+              "attributes": {
+                "x": "0",
+                "y": "0",
+                "width": "120",
+                "height": "120",
+                "fill": "#182b30"
+              }
+            },
+            {
+              "type": "element",
+              "name": "circle",
+              "attributes": {
+                "cx": "60",
+                "cy": "55",
+                "r": "55",
+                "fill": "#466e70",
+                "opacity": ".18"
+              }
+            },
+            {
+              "type": "element",
+              "name": "circle",
+              "attributes": {
+                "cx": "60",
+                "cy": "55",
+                "r": "50",
+                "fill": "none",
+                "stroke": "#e2c68c",
+                "stroke-width": "1.5",
+                "opacity": ".65"
+              }
+            },
+            {
+              "type": "element",
+              "name": "circle",
+              "attributes": {
+                "cx": "60",
+                "cy": "55",
+                "r": "45",
+                "fill": "none",
+                "stroke": "#466e70",
+                "stroke-width": "1",
+                "opacity": ".30"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 0 103 Q 60 91 120 103 L 120 120 L 0 120 Z",
+                "fill": "#1b2029",
+                "opacity": ".12"
+              }
+            }
+          ]
+        },
+        "burgundy": {
+          "elements": [
+            {
+              "type": "element",
+              "name": "rect",
+              "attributes": {
+                "x": "0",
+                "y": "0",
+                "width": "120",
+                "height": "120",
+                "fill": "#402b35"
+              }
+            },
+            {
+              "type": "element",
+              "name": "circle",
+              "attributes": {
+                "cx": "60",
+                "cy": "55",
+                "r": "55",
+                "fill": "#986b6a",
+                "opacity": ".18"
+              }
+            },
+            {
+              "type": "element",
+              "name": "circle",
+              "attributes": {
+                "cx": "60",
+                "cy": "55",
+                "r": "50",
+                "fill": "none",
+                "stroke": "#e2c68c",
+                "stroke-width": "1.5",
+                "opacity": ".65"
+              }
+            },
+            {
+              "type": "element",
+              "name": "circle",
+              "attributes": {
+                "cx": "60",
+                "cy": "55",
+                "r": "45",
+                "fill": "none",
+                "stroke": "#986b6a",
+                "stroke-width": "1",
+                "opacity": ".30"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 0 103 Q 60 91 120 103 L 120 120 L 0 120 Z",
+                "fill": "#1b2029",
+                "opacity": ".12"
+              }
+            }
+          ]
+        },
+        "petrol": {
+          "elements": [
+            {
+              "type": "element",
+              "name": "rect",
+              "attributes": {
+                "x": "0",
+                "y": "0",
+                "width": "120",
+                "height": "120",
+                "fill": "#193c45"
+              }
+            },
+            {
+              "type": "element",
+              "name": "circle",
+              "attributes": {
+                "cx": "60",
+                "cy": "55",
+                "r": "55",
+                "fill": "#57847d",
+                "opacity": ".18"
+              }
+            },
+            {
+              "type": "element",
+              "name": "circle",
+              "attributes": {
+                "cx": "60",
+                "cy": "55",
+                "r": "50",
+                "fill": "none",
+                "stroke": "#e2c68c",
+                "stroke-width": "1.5",
+                "opacity": ".65"
+              }
+            },
+            {
+              "type": "element",
+              "name": "circle",
+              "attributes": {
+                "cx": "60",
+                "cy": "55",
+                "r": "45",
+                "fill": "none",
+                "stroke": "#57847d",
+                "stroke-width": "1",
+                "opacity": ".30"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 0 103 Q 60 91 120 103 L 120 120 L 0 120 Z",
+                "fill": "#1b2029",
+                "opacity": ".12"
+              }
+            }
+          ]
+        },
+        "olive": {
+          "elements": [
+            {
+              "type": "element",
+              "name": "rect",
+              "attributes": {
+                "x": "0",
+                "y": "0",
+                "width": "120",
+                "height": "120",
+                "fill": "#3c4733"
+              }
+            },
+            {
+              "type": "element",
+              "name": "circle",
+              "attributes": {
+                "cx": "60",
+                "cy": "55",
+                "r": "55",
+                "fill": "#929b64",
+                "opacity": ".18"
+              }
+            },
+            {
+              "type": "element",
+              "name": "circle",
+              "attributes": {
+                "cx": "60",
+                "cy": "55",
+                "r": "50",
+                "fill": "none",
+                "stroke": "#e2c68c",
+                "stroke-width": "1.5",
+                "opacity": ".65"
+              }
+            },
+            {
+              "type": "element",
+              "name": "circle",
+              "attributes": {
+                "cx": "60",
+                "cy": "55",
+                "r": "45",
+                "fill": "none",
+                "stroke": "#929b64",
+                "stroke-width": "1",
+                "opacity": ".30"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 0 103 Q 60 91 120 103 L 120 120 L 0 120 Z",
+                "fill": "#1b2029",
+                "opacity": ".12"
+              }
+            }
+          ]
+        },
+        "aubergine": {
+          "elements": [
+            {
+              "type": "element",
+              "name": "rect",
+              "attributes": {
+                "x": "0",
+                "y": "0",
+                "width": "120",
+                "height": "120",
+                "fill": "#342b43"
+              }
+            },
+            {
+              "type": "element",
+              "name": "circle",
+              "attributes": {
+                "cx": "60",
+                "cy": "55",
+                "r": "55",
+                "fill": "#796e94",
+                "opacity": ".18"
+              }
+            },
+            {
+              "type": "element",
+              "name": "circle",
+              "attributes": {
+                "cx": "60",
+                "cy": "55",
+                "r": "50",
+                "fill": "none",
+                "stroke": "#e2c68c",
+                "stroke-width": "1.5",
+                "opacity": ".65"
+              }
+            },
+            {
+              "type": "element",
+              "name": "circle",
+              "attributes": {
+                "cx": "60",
+                "cy": "55",
+                "r": "45",
+                "fill": "none",
+                "stroke": "#796e94",
+                "stroke-width": "1",
+                "opacity": ".30"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 0 103 Q 60 91 120 103 L 120 120 L 0 120 Z",
+                "fill": "#1b2029",
+                "opacity": ".12"
+              }
+            }
+          ]
+        },
+        "coffee": {
+          "elements": [
+            {
+              "type": "element",
+              "name": "rect",
+              "attributes": {
+                "x": "0",
+                "y": "0",
+                "width": "120",
+                "height": "120",
+                "fill": "#48372f"
+              }
+            },
+            {
+              "type": "element",
+              "name": "circle",
+              "attributes": {
+                "cx": "60",
+                "cy": "55",
+                "r": "55",
+                "fill": "#b48f65",
+                "opacity": ".18"
+              }
+            },
+            {
+              "type": "element",
+              "name": "circle",
+              "attributes": {
+                "cx": "60",
+                "cy": "55",
+                "r": "50",
+                "fill": "none",
+                "stroke": "#e2c68c",
+                "stroke-width": "1.5",
+                "opacity": ".65"
+              }
+            },
+            {
+              "type": "element",
+              "name": "circle",
+              "attributes": {
+                "cx": "60",
+                "cy": "55",
+                "r": "45",
+                "fill": "none",
+                "stroke": "#b48f65",
+                "stroke-width": "1",
+                "opacity": ".30"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 0 103 Q 60 91 120 103 L 120 120 L 0 120 Z",
+                "fill": "#1b2029",
+                "opacity": ".12"
+              }
+            }
+          ]
+        }
+      }
+    },
+    "outfit": {
+      "width": 120,
+      "height": 120,
+      "probability": 100,
+      "variants": {
+        "midnight": {
+          "elements": [
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 0 120 Q 4 102 22 94 Q 37 87 50 88 L 60 97 L 70 88 Q 86 88 99 95 Q 117 105 120 120 Z",
+                "fill": "#18242d",
+                "stroke": "#1b2029",
+                "stroke-width": "2.5"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 48 89 L 60 99 L 72 89 L 69 120 L 51 120 Z",
+                "fill": "#f4e7d4"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 50 88 L 59 99 L 48 110 L 35 94 Z",
+                "fill": "#34434c",
+                "stroke": "#1b2029",
+                "stroke-width": "0.8"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 70 88 L 61 99 L 72 110 L 85 94 Z",
+                "fill": "#34434c",
+                "stroke": "#1b2029",
+                "stroke-width": "0.8"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 57 98 L 60 102 L 63 98 L 61 95 L 59 95 Z",
+                "fill": "#bb8650"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 60 101 L 55 118 L 65 118 Z",
+                "fill": "#bb8650"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 31 105 L 24 120 M 89 105 L 96 120",
+                "fill": "none",
+                "opacity": ".55",
+                "stroke": "#1b2029",
+                "stroke-width": "1"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 79 109 L 91 109 L 91 111 L 79 111 Z",
+                "fill": "#f4e4c6",
+                "opacity": ".8"
+              }
+            }
+          ]
+        },
+        "oxblood": {
+          "elements": [
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 0 120 Q 4 102 22 94 Q 37 87 50 88 L 60 97 L 70 88 Q 86 88 99 95 Q 117 105 120 120 Z",
+                "fill": "#652c38",
+                "stroke": "#1b2029",
+                "stroke-width": "2.5"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 48 89 L 60 99 L 72 89 L 69 120 L 51 120 Z",
+                "fill": "#f4e7d4"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 50 88 L 59 99 L 48 110 L 35 94 Z",
+                "fill": "#914653",
+                "stroke": "#1b2029",
+                "stroke-width": "0.8"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 70 88 L 61 99 L 72 110 L 85 94 Z",
+                "fill": "#914653",
+                "stroke": "#1b2029",
+                "stroke-width": "0.8"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 57 98 L 60 102 L 63 98 L 61 95 L 59 95 Z",
+                "fill": "#e5c483"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 60 101 L 55 118 L 65 118 Z",
+                "fill": "#e5c483"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 31 105 L 24 120 M 89 105 L 96 120",
+                "fill": "none",
+                "opacity": ".55",
+                "stroke": "#1b2029",
+                "stroke-width": "1"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 79 109 L 91 109 L 91 111 L 79 111 Z",
+                "fill": "#f4e4c6",
+                "opacity": ".8"
+              }
+            }
+          ]
+        },
+        "creamSuit": {
+          "elements": [
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 0 120 Q 4 102 22 94 Q 37 87 50 88 L 60 97 L 70 88 Q 86 88 99 95 Q 117 105 120 120 Z",
+                "fill": "#dfceb0",
+                "stroke": "#1b2029",
+                "stroke-width": "2.5"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 48 89 L 60 99 L 72 89 L 69 120 L 51 120 Z",
+                "fill": "#f4e7d4"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 50 88 L 59 99 L 48 110 L 35 94 Z",
+                "fill": "#f2e5cc",
+                "stroke": "#1b2029",
+                "stroke-width": "0.8"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 70 88 L 61 99 L 72 110 L 85 94 Z",
+                "fill": "#f2e5cc",
+                "stroke": "#1b2029",
+                "stroke-width": "0.8"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 57 98 L 60 102 L 63 98 L 61 95 L 59 95 Z",
+                "fill": "#315558"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 60 101 L 55 118 L 65 118 Z",
+                "fill": "#315558"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 31 105 L 24 120 M 89 105 L 96 120",
+                "fill": "none",
+                "opacity": ".55",
+                "stroke": "#1b2029",
+                "stroke-width": "1"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 79 109 L 91 109 L 91 111 L 79 111 Z",
+                "fill": "#f4e4c6",
+                "opacity": ".8"
+              }
+            }
+          ]
+        },
+        "charcoal": {
+          "elements": [
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 0 120 Q 4 102 22 94 Q 37 87 50 88 L 60 97 L 70 88 Q 86 88 99 95 Q 117 105 120 120 Z",
+                "fill": "#30333c",
+                "stroke": "#1b2029",
+                "stroke-width": "2.5"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 48 89 L 60 99 L 72 89 L 69 120 L 51 120 Z",
+                "fill": "#f4e7d4"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 50 88 L 59 99 L 48 110 L 35 94 Z",
+                "fill": "#51545e",
+                "stroke": "#1b2029",
+                "stroke-width": "0.8"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 70 88 L 61 99 L 72 110 L 85 94 Z",
+                "fill": "#51545e",
+                "stroke": "#1b2029",
+                "stroke-width": "0.8"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 57 98 L 60 102 L 63 98 L 61 95 L 59 95 Z",
+                "fill": "#9e3440"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 60 101 L 55 118 L 65 118 Z",
+                "fill": "#9e3440"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 31 105 L 24 120 M 89 105 L 96 120",
+                "fill": "none",
+                "opacity": ".55",
+                "stroke": "#1b2029",
+                "stroke-width": "1"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 79 109 L 91 109 L 91 111 L 79 111 Z",
+                "fill": "#f4e4c6",
+                "opacity": ".8"
+              }
+            }
+          ]
+        },
+        "forestSuit": {
+          "elements": [
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 0 120 Q 4 102 22 94 Q 37 87 50 88 L 60 97 L 70 88 Q 86 88 99 95 Q 117 105 120 120 Z",
+                "fill": "#253f38",
+                "stroke": "#1b2029",
+                "stroke-width": "2.5"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 48 89 L 60 99 L 72 89 L 69 120 L 51 120 Z",
+                "fill": "#f4e7d4"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 50 88 L 59 99 L 48 110 L 35 94 Z",
+                "fill": "#426358",
+                "stroke": "#1b2029",
+                "stroke-width": "0.8"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 70 88 L 61 99 L 72 110 L 85 94 Z",
+                "fill": "#426358",
+                "stroke": "#1b2029",
+                "stroke-width": "0.8"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 57 98 L 60 102 L 63 98 L 61 95 L 59 95 Z",
+                "fill": "#cbb078"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 60 101 L 55 118 L 65 118 Z",
+                "fill": "#cbb078"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 31 105 L 24 120 M 89 105 L 96 120",
+                "fill": "none",
+                "opacity": ".55",
+                "stroke": "#1b2029",
+                "stroke-width": "1"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 79 109 L 91 109 L 91 111 L 79 111 Z",
+                "fill": "#f4e4c6",
+                "opacity": ".8"
+              }
+            }
+          ]
+        }
+      }
+    },
+    "head": {
+      "width": 120,
+      "height": 120,
+      "probability": 100,
+      "variants": {
+        "tuxedo": {
+          "elements": [
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 26 61 Q 18 47 19 21 Q 20 14 26 20 L 43 34 Q 60 27 77 34 L 94 20 Q 101 14 101 22 Q 101 47 94 61 Q 101 68 100 77 L 106 78 L 97 86 Q 91 99 69 100 L 60 105 L 51 100 Q 29 99 23 86 L 14 78 L 20 76 Q 19 67 26 61 Z",
+                "fill": "#2d3540",
+                "stroke-linejoin": "round",
+                "stroke": "#1b2029",
+                "stroke-width": "2.8"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 27 45 L 25 25 Q 25 24 28 27 L 40 37 Z",
+                "fill": "#b8797f",
+                "opacity": ".95"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 93 45 L 95 25 Q 95 24 92 27 L 80 37 Z",
+                "fill": "#b8797f",
+                "opacity": ".95"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 31 72 Q 32 85 49 91 M 89 72 Q 88 85 71 91",
+                "fill": "none",
+                "opacity": ".22",
+                "stroke": "#f0e7d7",
+                "stroke-width": "2"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 30 82 Q 38 91 49 91 M 90 82 Q 82 91 71 91",
+                "fill": "none",
+                "opacity": ".24",
+                "stroke": "#f4e4c6",
+                "stroke-width": "1.2"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 42 70 Q 43 83 60 96 Q 77 83 78 70 Q 70 78 60 77 Q 50 78 42 70 Z",
+                "fill": "#f0e7d7",
+                "opacity": ".87"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 52 41 Q 60 38 68 41 L 62 54 L 58 54 Z",
+                "fill": "#f0e7d7",
+                "opacity": ".75"
+              }
+            }
+          ]
+        },
+        "ginger": {
+          "elements": [
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 26 61 Q 18 47 19 21 Q 20 14 26 20 L 43 34 Q 60 27 77 34 L 94 20 Q 101 14 101 22 Q 101 47 94 61 Q 101 68 100 77 L 106 78 L 97 86 Q 91 99 69 100 L 60 105 L 51 100 Q 29 99 23 86 L 14 78 L 20 76 Q 19 67 26 61 Z",
+                "fill": "#bd6a36",
+                "stroke-linejoin": "round",
+                "stroke": "#1b2029",
+                "stroke-width": "2.8"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 27 45 L 25 25 Q 25 24 28 27 L 40 37 Z",
+                "fill": "#cd817e",
+                "opacity": ".95"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 93 45 L 95 25 Q 95 24 92 27 L 80 37 Z",
+                "fill": "#cd817e",
+                "opacity": ".95"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 31 72 Q 32 85 49 91 M 89 72 Q 88 85 71 91",
+                "fill": "none",
+                "opacity": ".22",
+                "stroke": "#f7d09d",
+                "stroke-width": "2"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 30 82 Q 38 91 49 91 M 90 82 Q 82 91 71 91",
+                "fill": "none",
+                "opacity": ".24",
+                "stroke": "#f4e4c6",
+                "stroke-width": "1.2"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 60 37 L 55 48 L 60 45 L 65 48 Z",
+                "fill": "none",
+                "opacity": ".36",
+                "stroke": "#1b2029",
+                "stroke-width": "2"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 39 43 L 46 49 M 81 43 L 74 49 M 33 58 L 40 61 M 87 58 L 80 61 M 31 72 L 40 75 M 89 72 L 80 75",
+                "fill": "none",
+                "opacity": ".30",
+                "stroke-linecap": "round",
+                "stroke": "#1b2029",
+                "stroke-width": "2.3"
+              }
+            }
+          ]
+        },
+        "silver": {
+          "elements": [
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 26 61 Q 18 47 19 21 Q 20 14 26 20 L 43 34 Q 60 27 77 34 L 94 20 Q 101 14 101 22 Q 101 47 94 61 Q 101 68 100 77 L 106 78 L 97 86 Q 91 99 69 100 L 60 105 L 51 100 Q 29 99 23 86 L 14 78 L 20 76 Q 19 67 26 61 Z",
+                "fill": "#899199",
+                "stroke-linejoin": "round",
+                "stroke": "#1b2029",
+                "stroke-width": "2.8"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 27 45 L 25 25 Q 25 24 28 27 L 40 37 Z",
+                "fill": "#cf878b",
+                "opacity": ".95"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 93 45 L 95 25 Q 95 24 92 27 L 80 37 Z",
+                "fill": "#cf878b",
+                "opacity": ".95"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 31 72 Q 32 85 49 91 M 89 72 Q 88 85 71 91",
+                "fill": "none",
+                "opacity": ".22",
+                "stroke": "#e0d9cf",
+                "stroke-width": "2"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 30 82 Q 38 91 49 91 M 90 82 Q 82 91 71 91",
+                "fill": "none",
+                "opacity": ".24",
+                "stroke": "#f4e4c6",
+                "stroke-width": "1.2"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 60 37 L 55 48 L 60 45 L 65 48 Z",
+                "fill": "none",
+                "opacity": ".36",
+                "stroke": "#1b2029",
+                "stroke-width": "2"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 39 43 L 46 49 M 81 43 L 74 49 M 33 58 L 40 61 M 87 58 L 80 61 M 31 72 L 40 75 M 89 72 L 80 75",
+                "fill": "none",
+                "opacity": ".30",
+                "stroke-linecap": "round",
+                "stroke": "#1b2029",
+                "stroke-width": "2.3"
+              }
+            }
+          ]
+        },
+        "ebony": {
+          "elements": [
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 26 61 Q 18 47 19 21 Q 20 14 26 20 L 43 34 Q 60 27 77 34 L 94 20 Q 101 14 101 22 Q 101 47 94 61 Q 101 68 100 77 L 106 78 L 97 86 Q 91 99 69 100 L 60 105 L 51 100 Q 29 99 23 86 L 14 78 L 20 76 Q 19 67 26 61 Z",
+                "fill": "#292d35",
+                "stroke-linejoin": "round",
+                "stroke": "#1b2029",
+                "stroke-width": "2.8"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 27 45 L 25 25 Q 25 24 28 27 L 40 37 Z",
+                "fill": "#b87781",
+                "opacity": ".95"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 93 45 L 95 25 Q 95 24 92 27 L 80 37 Z",
+                "fill": "#b87781",
+                "opacity": ".95"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 31 72 Q 32 85 49 91 M 89 72 Q 88 85 71 91",
+                "fill": "none",
+                "opacity": ".22",
+                "stroke": "#a0a1a0",
+                "stroke-width": "2"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 30 82 Q 38 91 49 91 M 90 82 Q 82 91 71 91",
+                "fill": "none",
+                "opacity": ".24",
+                "stroke": "#f4e4c6",
+                "stroke-width": "1.2"
+              }
+            }
+          ]
+        },
+        "snow": {
+          "elements": [
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 26 61 Q 18 47 19 21 Q 20 14 26 20 L 43 34 Q 60 27 77 34 L 94 20 Q 101 14 101 22 Q 101 47 94 61 Q 101 68 100 77 L 106 78 L 97 86 Q 91 99 69 100 L 60 105 L 51 100 Q 29 99 23 86 L 14 78 L 20 76 Q 19 67 26 61 Z",
+                "fill": "#e1ddd0",
+                "stroke-linejoin": "round",
+                "stroke": "#1b2029",
+                "stroke-width": "2.8"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 27 45 L 25 25 Q 25 24 28 27 L 40 37 Z",
+                "fill": "#c9848a",
+                "opacity": ".95"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 93 45 L 95 25 Q 95 24 92 27 L 80 37 Z",
+                "fill": "#c9848a",
+                "opacity": ".95"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 31 72 Q 32 85 49 91 M 89 72 Q 88 85 71 91",
+                "fill": "none",
+                "opacity": ".22",
+                "stroke": "#ffffff",
+                "stroke-width": "2"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 30 82 Q 38 91 49 91 M 90 82 Q 82 91 71 91",
+                "fill": "none",
+                "opacity": ".24",
+                "stroke": "#f4e4c6",
+                "stroke-width": "1.2"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 26 53 Q 32 31 50 36 Q 46 56 38 68 Z",
+                "fill": "#44434a",
+                "opacity": ".60"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 81 73 Q 95 61 94 73 Q 90 87 75 90 Z",
+                "fill": "#63515d",
+                "opacity": ".42"
+              }
+            }
+          ]
+        },
+        "chocolate": {
+          "elements": [
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 26 61 Q 18 47 19 21 Q 20 14 26 20 L 43 34 Q 60 27 77 34 L 94 20 Q 101 14 101 22 Q 101 47 94 61 Q 101 68 100 77 L 106 78 L 97 86 Q 91 99 69 100 L 60 105 L 51 100 Q 29 99 23 86 L 14 78 L 20 76 Q 19 67 26 61 Z",
+                "fill": "#73503e",
+                "stroke-linejoin": "round",
+                "stroke": "#1b2029",
+                "stroke-width": "2.8"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 27 45 L 25 25 Q 25 24 28 27 L 40 37 Z",
+                "fill": "#c7807c",
+                "opacity": ".95"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 93 45 L 95 25 Q 95 24 92 27 L 80 37 Z",
+                "fill": "#c7807c",
+                "opacity": ".95"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 31 72 Q 32 85 49 91 M 89 72 Q 88 85 71 91",
+                "fill": "none",
+                "opacity": ".22",
+                "stroke": "#d4b28d",
+                "stroke-width": "2"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 30 82 Q 38 91 49 91 M 90 82 Q 82 91 71 91",
+                "fill": "none",
+                "opacity": ".24",
+                "stroke": "#f4e4c6",
+                "stroke-width": "1.2"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 60 37 L 55 48 L 60 45 L 65 48 Z",
+                "fill": "none",
+                "opacity": ".36",
+                "stroke": "#1b2029",
+                "stroke-width": "2"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 39 43 L 46 49 M 81 43 L 74 49 M 33 58 L 40 61 M 87 58 L 80 61 M 31 72 L 40 75 M 89 72 L 80 75",
+                "fill": "none",
+                "opacity": ".30",
+                "stroke-linecap": "round",
+                "stroke": "#1b2029",
+                "stroke-width": "2.3"
+              }
+            }
+          ]
+        },
+        "smoke": {
+          "elements": [
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 26 61 Q 18 47 19 21 Q 20 14 26 20 L 43 34 Q 60 27 77 34 L 94 20 Q 101 14 101 22 Q 101 47 94 61 Q 101 68 100 77 L 106 78 L 97 86 Q 91 99 69 100 L 60 105 L 51 100 Q 29 99 23 86 L 14 78 L 20 76 Q 19 67 26 61 Z",
+                "fill": "#626874",
+                "stroke-linejoin": "round",
+                "stroke": "#1b2029",
+                "stroke-width": "2.8"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 27 45 L 25 25 Q 25 24 28 27 L 40 37 Z",
+                "fill": "#bd8790",
+                "opacity": ".95"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 93 45 L 95 25 Q 95 24 92 27 L 80 37 Z",
+                "fill": "#bd8790",
+                "opacity": ".95"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 31 72 Q 32 85 49 91 M 89 72 Q 88 85 71 91",
+                "fill": "none",
+                "opacity": ".22",
+                "stroke": "#ded6cb",
+                "stroke-width": "2"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 30 82 Q 38 91 49 91 M 90 82 Q 82 91 71 91",
+                "fill": "none",
+                "opacity": ".24",
+                "stroke": "#f4e4c6",
+                "stroke-width": "1.2"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 26 53 Q 32 31 50 36 Q 46 56 38 68 Z",
+                "fill": "#44434a",
+                "opacity": ".60"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 81 73 Q 95 61 94 73 Q 90 87 75 90 Z",
+                "fill": "#63515d",
+                "opacity": ".42"
+              }
+            }
+          ]
+        },
+        "calico": {
+          "elements": [
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 26 61 Q 18 47 19 21 Q 20 14 26 20 L 43 34 Q 60 27 77 34 L 94 20 Q 101 14 101 22 Q 101 47 94 61 Q 101 68 100 77 L 106 78 L 97 86 Q 91 99 69 100 L 60 105 L 51 100 Q 29 99 23 86 L 14 78 L 20 76 Q 19 67 26 61 Z",
+                "fill": "#d0a26b",
+                "stroke-linejoin": "round",
+                "stroke": "#1b2029",
+                "stroke-width": "2.8"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 27 45 L 25 25 Q 25 24 28 27 L 40 37 Z",
+                "fill": "#ca8282",
+                "opacity": ".95"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 93 45 L 95 25 Q 95 24 92 27 L 80 37 Z",
+                "fill": "#ca8282",
+                "opacity": ".95"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 31 72 Q 32 85 49 91 M 89 72 Q 88 85 71 91",
+                "fill": "none",
+                "opacity": ".22",
+                "stroke": "#f1e2ce",
+                "stroke-width": "2"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 30 82 Q 38 91 49 91 M 90 82 Q 82 91 71 91",
+                "fill": "none",
+                "opacity": ".24",
+                "stroke": "#f4e4c6",
+                "stroke-width": "1.2"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 26 52 Q 31 33 48 38 Q 51 50 39 68 L 28 67 Z",
+                "fill": "#5c5149"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 75 39 Q 89 35 95 50 L 89 67 Q 78 63 75 39 Z",
+                "fill": "#a95331"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 44 84 Q 60 93 75 84 L 69 97 L 51 97 Z",
+                "fill": "#f7ede0"
+              }
+            }
+          ]
+        }
+      }
+    },
+    "scar": {
+      "width": 120,
+      "height": 120,
+      "probability": 35,
+      "variants": {
+        "leftCheek": {
+          "elements": [
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 29 74 Q 34 78 39 80",
+                "fill": "none",
+                "stroke": "#6d343a",
+                "stroke-width": "2.8",
+                "stroke-linecap": "round"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 29.5 73.5 Q 34 77 39 79.5",
+                "fill": "none",
+                "stroke": "#daa8a0",
+                "stroke-width": "1.1",
+                "stroke-linecap": "round"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 32 74 L 30 79 M 36 77 L 34 82",
+                "fill": "none",
+                "stroke": "#c8908b",
+                "stroke-width": "0.75",
+                "stroke-linecap": "round"
+              }
+            }
+          ]
+        },
+        "rightCheek": {
+          "elements": [
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 81 80 Q 87 77 91 73",
+                "fill": "none",
+                "stroke": "#6d343a",
+                "stroke-width": "2.8",
+                "stroke-linecap": "round"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 81 79 Q 87 76 90.5 72.7",
+                "fill": "none",
+                "stroke": "#daa8a0",
+                "stroke-width": "1.1",
+                "stroke-linecap": "round"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 84 77 L 87 82 M 88 74 L 91 78",
+                "fill": "none",
+                "stroke": "#c8908b",
+                "stroke-width": "0.75",
+                "stroke-linecap": "round"
+              }
+            }
+          ]
+        },
+        "browLeft": {
+          "elements": [
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 34 47 L 40 53",
+                "fill": "none",
+                "stroke": "#743b42",
+                "stroke-width": "2.5",
+                "stroke-linecap": "round"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 34.5 46.6 L 40.5 52.7",
+                "fill": "none",
+                "stroke": "#dbaca4",
+                "stroke-width": "1",
+                "stroke-linecap": "round"
+              }
+            }
+          ]
+        },
+        "jaw": {
+          "elements": [
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 79 89 Q 82 92 85 96",
+                "fill": "none",
+                "stroke": "#713a40",
+                "stroke-width": "2.6",
+                "stroke-linecap": "round"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 79.5 88.5 Q 82.5 91.5 85.5 95.5",
+                "fill": "none",
+                "stroke": "#d9a49c",
+                "stroke-width": "1",
+                "stroke-linecap": "round"
+              }
+            }
+          ]
+        }
+      }
+    },
+    "eyes": {
+      "width": 120,
+      "height": 120,
+      "probability": 100,
+      "variants": {
+        "amber": {
+          "elements": [
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 34 65 Q 42 60 52 64 Q 44 69 34 65 Z",
+                "fill": "#f2e9d8",
+                "stroke": "#24202a",
+                "stroke-width": "1.2"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 68 64 Q 78 60 86 65 Q 76 69 68 64 Z",
+                "fill": "#f2e9d8",
+                "stroke": "#24202a",
+                "stroke-width": "1.2"
+              }
+            },
+            {
+              "type": "element",
+              "name": "ellipse",
+              "attributes": {
+                "cx": "43",
+                "cy": "65",
+                "rx": "2.3",
+                "ry": "2.35",
+                "fill": "#c79536"
+              }
+            },
+            {
+              "type": "element",
+              "name": "ellipse",
+              "attributes": {
+                "cx": "77",
+                "cy": "65",
+                "rx": "2.3",
+                "ry": "2.35",
+                "fill": "#c79536"
+              }
+            },
+            {
+              "type": "element",
+              "name": "ellipse",
+              "attributes": {
+                "cx": "43",
+                "cy": "65",
+                "rx": "0.75",
+                "ry": "1.65",
+                "fill": "#171922"
+              }
+            },
+            {
+              "type": "element",
+              "name": "ellipse",
+              "attributes": {
+                "cx": "77",
+                "cy": "65",
+                "rx": "0.75",
+                "ry": "1.65",
+                "fill": "#171922"
+              }
+            },
+            {
+              "type": "element",
+              "name": "circle",
+              "attributes": {
+                "cx": "43.8",
+                "cy": "64.3",
+                "r": "0.48",
+                "fill": "#fff8ed"
+              }
+            },
+            {
+              "type": "element",
+              "name": "circle",
+              "attributes": {
+                "cx": "77.8",
+                "cy": "64.3",
+                "r": "0.48",
+                "fill": "#fff8ed"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 33 60 L 53 63 M 67 63 L 87 60",
+                "fill": "none",
+                "stroke": "#23202a",
+                "stroke-width": "3.1",
+                "stroke-linecap": "round"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 34 56 Q 44 55 53 59 M 67 59 Q 77 55 86 56",
+                "fill": "none",
+                "stroke": "#23202a",
+                "stroke-width": "2.8",
+                "stroke-linecap": "round"
+              }
+            }
+          ]
+        },
+        "jade": {
+          "elements": [
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 34 65 Q 42 60 52 64 Q 44 69 34 65 Z",
+                "fill": "#f2e9d8",
+                "stroke": "#24202a",
+                "stroke-width": "1.2"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 68 64 Q 78 60 86 65 Q 76 69 68 64 Z",
+                "fill": "#f2e9d8",
+                "stroke": "#24202a",
+                "stroke-width": "1.2"
+              }
+            },
+            {
+              "type": "element",
+              "name": "ellipse",
+              "attributes": {
+                "cx": "43",
+                "cy": "65",
+                "rx": "2.3",
+                "ry": "2.35",
+                "fill": "#65a575"
+              }
+            },
+            {
+              "type": "element",
+              "name": "ellipse",
+              "attributes": {
+                "cx": "77",
+                "cy": "65",
+                "rx": "2.3",
+                "ry": "2.35",
+                "fill": "#65a575"
+              }
+            },
+            {
+              "type": "element",
+              "name": "ellipse",
+              "attributes": {
+                "cx": "43",
+                "cy": "65",
+                "rx": "0.75",
+                "ry": "1.65",
+                "fill": "#171922"
+              }
+            },
+            {
+              "type": "element",
+              "name": "ellipse",
+              "attributes": {
+                "cx": "77",
+                "cy": "65",
+                "rx": "0.75",
+                "ry": "1.65",
+                "fill": "#171922"
+              }
+            },
+            {
+              "type": "element",
+              "name": "circle",
+              "attributes": {
+                "cx": "43.8",
+                "cy": "64.3",
+                "r": "0.48",
+                "fill": "#fff8ed"
+              }
+            },
+            {
+              "type": "element",
+              "name": "circle",
+              "attributes": {
+                "cx": "77.8",
+                "cy": "64.3",
+                "r": "0.48",
+                "fill": "#fff8ed"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 33 60 L 53 63 M 67 63 L 87 60",
+                "fill": "none",
+                "stroke": "#23202a",
+                "stroke-width": "3.1",
+                "stroke-linecap": "round"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 34 56 Q 44 55 53 59 M 67 59 Q 77 55 86 56",
+                "fill": "none",
+                "stroke": "#23202a",
+                "stroke-width": "2.8",
+                "stroke-linecap": "round"
+              }
+            }
+          ]
+        },
+        "ice": {
+          "elements": [
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 34 65 Q 42 60 52 64 Q 44 69 34 65 Z",
+                "fill": "#f2e9d8",
+                "stroke": "#24202a",
+                "stroke-width": "1.2"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 68 64 Q 78 60 86 65 Q 76 69 68 64 Z",
+                "fill": "#f2e9d8",
+                "stroke": "#24202a",
+                "stroke-width": "1.2"
+              }
+            },
+            {
+              "type": "element",
+              "name": "ellipse",
+              "attributes": {
+                "cx": "43",
+                "cy": "65",
+                "rx": "2.3",
+                "ry": "2.35",
+                "fill": "#79b5c6"
+              }
+            },
+            {
+              "type": "element",
+              "name": "ellipse",
+              "attributes": {
+                "cx": "77",
+                "cy": "65",
+                "rx": "2.3",
+                "ry": "2.35",
+                "fill": "#79b5c6"
+              }
+            },
+            {
+              "type": "element",
+              "name": "ellipse",
+              "attributes": {
+                "cx": "43",
+                "cy": "65",
+                "rx": "0.75",
+                "ry": "1.65",
+                "fill": "#171922"
+              }
+            },
+            {
+              "type": "element",
+              "name": "ellipse",
+              "attributes": {
+                "cx": "77",
+                "cy": "65",
+                "rx": "0.75",
+                "ry": "1.65",
+                "fill": "#171922"
+              }
+            },
+            {
+              "type": "element",
+              "name": "circle",
+              "attributes": {
+                "cx": "43.8",
+                "cy": "64.3",
+                "r": "0.48",
+                "fill": "#fff8ed"
+              }
+            },
+            {
+              "type": "element",
+              "name": "circle",
+              "attributes": {
+                "cx": "77.8",
+                "cy": "64.3",
+                "r": "0.48",
+                "fill": "#fff8ed"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 33 60 L 53 63 M 67 63 L 87 60",
+                "fill": "none",
+                "stroke": "#23202a",
+                "stroke-width": "3.1",
+                "stroke-linecap": "round"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 34 56 Q 44 55 53 59 M 67 59 Q 77 55 86 56",
+                "fill": "none",
+                "stroke": "#23202a",
+                "stroke-width": "2.8",
+                "stroke-linecap": "round"
+              }
+            }
+          ]
+        },
+        "gold": {
+          "elements": [
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 34 65 Q 42 60 52 64 Q 44 69 34 65 Z",
+                "fill": "#f2e9d8",
+                "stroke": "#24202a",
+                "stroke-width": "1.2"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 68 64 Q 78 60 86 65 Q 76 69 68 64 Z",
+                "fill": "#f2e9d8",
+                "stroke": "#24202a",
+                "stroke-width": "1.2"
+              }
+            },
+            {
+              "type": "element",
+              "name": "ellipse",
+              "attributes": {
+                "cx": "43",
+                "cy": "65",
+                "rx": "2.3",
+                "ry": "2.35",
+                "fill": "#dfbd59"
+              }
+            },
+            {
+              "type": "element",
+              "name": "ellipse",
+              "attributes": {
+                "cx": "77",
+                "cy": "65",
+                "rx": "2.3",
+                "ry": "2.35",
+                "fill": "#dfbd59"
+              }
+            },
+            {
+              "type": "element",
+              "name": "ellipse",
+              "attributes": {
+                "cx": "43",
+                "cy": "65",
+                "rx": "0.75",
+                "ry": "1.65",
+                "fill": "#171922"
+              }
+            },
+            {
+              "type": "element",
+              "name": "ellipse",
+              "attributes": {
+                "cx": "77",
+                "cy": "65",
+                "rx": "0.75",
+                "ry": "1.65",
+                "fill": "#171922"
+              }
+            },
+            {
+              "type": "element",
+              "name": "circle",
+              "attributes": {
+                "cx": "43.8",
+                "cy": "64.3",
+                "r": "0.48",
+                "fill": "#fff8ed"
+              }
+            },
+            {
+              "type": "element",
+              "name": "circle",
+              "attributes": {
+                "cx": "77.8",
+                "cy": "64.3",
+                "r": "0.48",
+                "fill": "#fff8ed"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 33 60 L 53 63 M 67 63 L 87 60",
+                "fill": "none",
+                "stroke": "#23202a",
+                "stroke-width": "3.1",
+                "stroke-linecap": "round"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 34 56 Q 44 55 53 59 M 67 59 Q 77 55 86 56",
+                "fill": "none",
+                "stroke": "#23202a",
+                "stroke-width": "2.8",
+                "stroke-linecap": "round"
+              }
+            }
+          ]
+        },
+        "narrow": {
+          "elements": [
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 31 59 Q 40 51 55 58 M 65 58 Q 80 51 89 59",
+                "fill": "none",
+                "stroke-linecap": "round",
+                "stroke": "#1b2029",
+                "stroke-width": "3.1"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 34 64 Q 43 60 52 63 M 68 63 Q 77 60 86 64",
+                "fill": "none",
+                "stroke-linecap": "round",
+                "stroke": "#f0dfc0",
+                "stroke-width": "2.1",
+                "opacity": ".9"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 34 56 Q 43 52 53 55 M 67 55 Q 77 52 87 56",
+                "fill": "none",
+                "stroke-linecap": "round",
+                "stroke": "#1b2029",
+                "stroke-width": "3"
+              }
+            }
+          ]
+        }
+      }
+    },
+    "muzzle": {
+      "width": 120,
+      "height": 120,
+      "probability": 100,
+      "variants": {
+        "stoic": {
+          "elements": [
+            {
+              "type": "element",
+              "name": "ellipse",
+              "attributes": {
+                "cx": "51",
+                "cy": "79",
+                "rx": "10",
+                "ry": "8.3",
+                "fill": "#f4e4c6"
+              }
+            },
+            {
+              "type": "element",
+              "name": "ellipse",
+              "attributes": {
+                "cx": "69",
+                "cy": "79",
+                "rx": "10",
+                "ry": "8.3",
+                "fill": "#f4e4c6"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 55 79 Q 60 76 65 79 L 60 84 Z",
+                "fill": "#bd7d7c",
+                "stroke": "#1b2029",
+                "stroke-width": "0.55"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 60 84 L 60 88 M 60 88 Q 55 93 49 88 M 60 88 Q 65 93 71 88",
+                "fill": "none",
+                "stroke-linecap": "round",
+                "stroke": "#1b2029",
+                "stroke-width": "1.6"
+              }
+            },
+            {
+              "type": "element",
+              "name": "circle",
+              "attributes": {
+                "cx": "46",
+                "cy": "79",
+                "r": "0.8",
+                "fill": "#7d6b60"
+              }
+            },
+            {
+              "type": "element",
+              "name": "circle",
+              "attributes": {
+                "cx": "49",
+                "cy": "83",
+                "r": "0.8",
+                "fill": "#7d6b60"
+              }
+            },
+            {
+              "type": "element",
+              "name": "circle",
+              "attributes": {
+                "cx": "74",
+                "cy": "79",
+                "r": "0.8",
+                "fill": "#7d6b60"
+              }
+            },
+            {
+              "type": "element",
+              "name": "circle",
+              "attributes": {
+                "cx": "71",
+                "cy": "83",
+                "r": "0.8",
+                "fill": "#7d6b60"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 37 78 L 20 74 M 37 82 L 20 82 M 83 78 L 100 74 M 83 82 L 100 82",
+                "fill": "none",
+                "opacity": ".70",
+                "stroke-linecap": "round",
+                "stroke": "#1b2029",
+                "stroke-width": "1.15"
+              }
+            }
+          ]
+        },
+        "smirk": {
+          "elements": [
+            {
+              "type": "element",
+              "name": "ellipse",
+              "attributes": {
+                "cx": "51",
+                "cy": "79",
+                "rx": "10",
+                "ry": "8.3",
+                "fill": "#f4e4c6"
+              }
+            },
+            {
+              "type": "element",
+              "name": "ellipse",
+              "attributes": {
+                "cx": "69",
+                "cy": "79",
+                "rx": "10",
+                "ry": "8.3",
+                "fill": "#f4e4c6"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 55 79 Q 60 76 65 79 L 60 84 Z",
+                "fill": "#bd7d7c",
+                "stroke": "#1b2029",
+                "stroke-width": "0.55"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 60 84 L 60 88 Q 68 94 74 87 M 60 88 Q 55 91 51 88",
+                "fill": "none",
+                "stroke-linecap": "round",
+                "stroke": "#1b2029",
+                "stroke-width": "1.6"
+              }
+            },
+            {
+              "type": "element",
+              "name": "circle",
+              "attributes": {
+                "cx": "46",
+                "cy": "79",
+                "r": "0.8",
+                "fill": "#7d6b60"
+              }
+            },
+            {
+              "type": "element",
+              "name": "circle",
+              "attributes": {
+                "cx": "49",
+                "cy": "83",
+                "r": "0.8",
+                "fill": "#7d6b60"
+              }
+            },
+            {
+              "type": "element",
+              "name": "circle",
+              "attributes": {
+                "cx": "74",
+                "cy": "79",
+                "r": "0.8",
+                "fill": "#7d6b60"
+              }
+            },
+            {
+              "type": "element",
+              "name": "circle",
+              "attributes": {
+                "cx": "71",
+                "cy": "83",
+                "r": "0.8",
+                "fill": "#7d6b60"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 37 78 L 20 74 M 37 82 L 20 82 M 83 78 L 100 74 M 83 82 L 100 82",
+                "fill": "none",
+                "opacity": ".70",
+                "stroke-linecap": "round",
+                "stroke": "#1b2029",
+                "stroke-width": "1.15"
+              }
+            }
+          ]
+        },
+        "grumpy": {
+          "elements": [
+            {
+              "type": "element",
+              "name": "ellipse",
+              "attributes": {
+                "cx": "51",
+                "cy": "79",
+                "rx": "10",
+                "ry": "8.3",
+                "fill": "#f4e4c6"
+              }
+            },
+            {
+              "type": "element",
+              "name": "ellipse",
+              "attributes": {
+                "cx": "69",
+                "cy": "79",
+                "rx": "10",
+                "ry": "8.3",
+                "fill": "#f4e4c6"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 55 79 Q 60 76 65 79 L 60 84 Z",
+                "fill": "#bd7d7c",
+                "stroke": "#1b2029",
+                "stroke-width": "0.55"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 60 84 L 60 88 M 48 90 Q 60 87 72 90",
+                "fill": "none",
+                "stroke-linecap": "round",
+                "stroke": "#1b2029",
+                "stroke-width": "1.6"
+              }
+            },
+            {
+              "type": "element",
+              "name": "circle",
+              "attributes": {
+                "cx": "46",
+                "cy": "79",
+                "r": "0.8",
+                "fill": "#7d6b60"
+              }
+            },
+            {
+              "type": "element",
+              "name": "circle",
+              "attributes": {
+                "cx": "49",
+                "cy": "83",
+                "r": "0.8",
+                "fill": "#7d6b60"
+              }
+            },
+            {
+              "type": "element",
+              "name": "circle",
+              "attributes": {
+                "cx": "74",
+                "cy": "79",
+                "r": "0.8",
+                "fill": "#7d6b60"
+              }
+            },
+            {
+              "type": "element",
+              "name": "circle",
+              "attributes": {
+                "cx": "71",
+                "cy": "83",
+                "r": "0.8",
+                "fill": "#7d6b60"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 37 78 L 20 74 M 37 82 L 20 82 M 83 78 L 100 74 M 83 82 L 100 82",
+                "fill": "none",
+                "opacity": ".70",
+                "stroke-linecap": "round",
+                "stroke": "#1b2029",
+                "stroke-width": "1.15"
+              }
+            }
+          ]
+        },
+        "fang": {
+          "elements": [
+            {
+              "type": "element",
+              "name": "ellipse",
+              "attributes": {
+                "cx": "51",
+                "cy": "79",
+                "rx": "10",
+                "ry": "8.3",
+                "fill": "#f4e4c6"
+              }
+            },
+            {
+              "type": "element",
+              "name": "ellipse",
+              "attributes": {
+                "cx": "69",
+                "cy": "79",
+                "rx": "10",
+                "ry": "8.3",
+                "fill": "#f4e4c6"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 55 79 Q 60 76 65 79 L 60 84 Z",
+                "fill": "#bd7d7c",
+                "stroke": "#1b2029",
+                "stroke-width": "0.55"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 49 89 Q 58 85 65 88 Q 70 90 73 87",
+                "fill": "none",
+                "stroke-linecap": "round",
+                "stroke": "#1b2029",
+                "stroke-width": "1.8"
+              }
+            },
+            {
+              "type": "element",
+              "name": "circle",
+              "attributes": {
+                "cx": "46",
+                "cy": "79",
+                "r": "0.8",
+                "fill": "#7d6b60"
+              }
+            },
+            {
+              "type": "element",
+              "name": "circle",
+              "attributes": {
+                "cx": "49",
+                "cy": "83",
+                "r": "0.8",
+                "fill": "#7d6b60"
+              }
+            },
+            {
+              "type": "element",
+              "name": "circle",
+              "attributes": {
+                "cx": "74",
+                "cy": "79",
+                "r": "0.8",
+                "fill": "#7d6b60"
+              }
+            },
+            {
+              "type": "element",
+              "name": "circle",
+              "attributes": {
+                "cx": "71",
+                "cy": "83",
+                "r": "0.8",
+                "fill": "#7d6b60"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 37 78 L 20 74 M 37 82 L 20 82 M 83 78 L 100 74 M 83 82 L 100 82",
+                "fill": "none",
+                "opacity": ".70",
+                "stroke-linecap": "round",
+                "stroke": "#1b2029",
+                "stroke-width": "1.15"
+              }
+            }
+          ]
+        }
+      }
+    },
+    "accessory": {
+      "width": 120,
+      "height": 120,
+      "probability": 34,
+      "variants": {
+        "goldRing": {
+          "elements": [
+            {
+              "type": "element",
+              "name": "circle",
+              "attributes": {
+                "cx": "94",
+                "cy": "77",
+                "r": "3.3",
+                "fill": "none",
+                "stroke": "#d8b86b",
+                "stroke-width": "2"
+              }
+            },
+            {
+              "type": "element",
+              "name": "circle",
+              "attributes": {
+                "cx": "94",
+                "cy": "77",
+                "r": "1",
+                "fill": "#fff2bc"
+              }
+            }
+          ]
+        },
+        "bowTie": {
+          "elements": [
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 60 105 L 52 101 L 52 110 Z",
+                "fill": "#cda758",
+                "stroke": "#1b2029",
+                "stroke-width": "0.7"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 60 105 L 68 101 L 68 110 Z",
+                "fill": "#cda758",
+                "stroke": "#1b2029",
+                "stroke-width": "0.7"
+              }
+            },
+            {
+              "type": "element",
+              "name": "circle",
+              "attributes": {
+                "cx": "60",
+                "cy": "105",
+                "r": "2.5",
+                "fill": "#7b4243"
+              }
+            }
+          ]
+        },
+        "cigar": {
+          "elements": [
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 72 89 L 94 93",
+                "fill": "none",
+                "stroke-linecap": "round",
+                "stroke": "#6d472b",
+                "stroke-width": "4.8"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 93 92 L 98 94",
+                "fill": "none",
+                "stroke-linecap": "round",
+                "stroke": "#dcae60",
+                "stroke-width": "4.8"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 99 90 Q 104 85 101 81",
+                "fill": "none",
+                "opacity": ".65",
+                "stroke": "#d3dbdb",
+                "stroke-width": "1.5"
+              }
+            }
+          ]
+        },
+        "monocle": {
+          "elements": [
+            {
+              "type": "element",
+              "name": "circle",
+              "attributes": {
+                "cx": "77",
+                "cy": "65",
+                "r": "10",
+                "fill": "none",
+                "stroke": "#d6ad60",
+                "stroke-width": "1.5"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 86 71 L 92 93",
+                "fill": "none",
+                "stroke": "#d6ad60",
+                "stroke-width": "1.2"
+              }
+            }
+          ]
+        },
+        "shades": {
+          "elements": [
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 33 60 Q 42 57 53 61 L 51 72 Q 43 76 35 71 Z",
+                "fill": "#202a30",
+                "stroke": "#1b2029",
+                "stroke-width": "1.4"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 67 61 Q 78 57 87 60 L 85 71 Q 77 76 69 72 Z",
+                "fill": "#202a30",
+                "stroke": "#1b2029",
+                "stroke-width": "1.4"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 52 62 Q 60 59 68 62",
+                "fill": "none",
+                "stroke": "#1b2029",
+                "stroke-width": "2.4"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 36 62 L 48 62 M 70 62 L 82 62",
+                "fill": "none",
+                "opacity": ".7",
+                "stroke": "#91a9a8",
+                "stroke-width": "1.1"
+              }
+            }
+          ]
+        }
+      }
+    },
+    "hat": {
+      "width": 120,
+      "height": 120,
+      "probability": 100,
+      "variants": {
+        "fedora": {
+          "elements": [
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 37 48 L 42 25 Q 58 16 79 23 L 86 48 Z",
+                "fill": "#25313a",
+                "stroke": "#1b2029",
+                "stroke-width": "2.3"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 41 37 Q 61 42 82 37 L 84 46 Q 61 50 37 46 Z",
+                "fill": "#b98657"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 19 49 Q 60 42 101 49 Q 72 58 39 56 Q 25 55 19 49 Z",
+                "fill": "#25313a",
+                "stroke": "#1b2029",
+                "stroke-width": "1.9"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 49 27 Q 62 23 76 28",
+                "fill": "none",
+                "opacity": ".38",
+                "stroke": "#97a3a2",
+                "stroke-width": "1.1"
+              }
+            }
+          ]
+        },
+        "trilby": {
+          "elements": [
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 37 47 L 43 28 Q 60 17 78 28 L 84 47 Z",
+                "fill": "#473b37",
+                "stroke": "#1b2029",
+                "stroke-width": "2.3"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 41 38 Q 60 42 80 38 L 83 46 L 38 46 Z",
+                "fill": "#a9845a"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 23 49 Q 60 43 98 49 Q 74 56 34 53 Z",
+                "fill": "#403630",
+                "stroke": "#1b2029",
+                "stroke-width": "1.8"
+              }
+            }
+          ]
+        },
+        "flatCap": {
+          "elements": [
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 24 50 Q 27 25 59 27 Q 89 25 96 44 L 92 50 Q 60 43 24 50 Z",
+                "fill": "#465057",
+                "stroke": "#1b2029",
+                "stroke-width": "2.4"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 24 49 Q 56 42 94 49 Q 79 59 41 55 Z",
+                "fill": "#303940",
+                "stroke": "#1b2029",
+                "stroke-width": "1.6"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 60 29 L 68 44",
+                "fill": "none",
+                "stroke": "#79858a",
+                "stroke-width": "1.6"
+              }
+            }
+          ]
+        },
+        "whiteFedora": {
+          "elements": [
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 37 48 L 42 25 Q 58 16 79 23 L 86 48 Z",
+                "fill": "#d8c8a8",
+                "stroke": "#68584c",
+                "stroke-width": "2"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 41 37 Q 61 42 82 37 L 84 46 Q 61 50 37 46 Z",
+                "fill": "#643e3e"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M 19 49 Q 60 42 101 49 Q 72 58 39 56 Q 25 55 19 49 Z",
+                "fill": "#e0d0b2",
+                "stroke": "#68584c",
+                "stroke-width": "1.9"
+              }
+            }
+          ]
+        },
+        "bareHead": {
+          "elements": []
+        }
+      }
+    }
+  },
+  "colors": {}
+}
