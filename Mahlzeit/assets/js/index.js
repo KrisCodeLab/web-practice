@@ -39,8 +39,8 @@ function loadCategoryData(){
 function loadMealData(i, id) {
 
     if (id == "All") {
-        console.log("es ist in All")
-        if (mealArray.length == 0) {
+        
+        if (mealArray.length == 0 || letterIndex == undefined) {
             if (letterIndex == undefined) {
                 letterIndex = 0
             } else {
@@ -56,7 +56,7 @@ function loadMealData(i, id) {
                 if (data != undefined && data.meals != null) {
                     mealArray = data.meals.reverse()
                     console.log(mealArray)
-                    buildMealOverview(i)
+                    buildMealOverview(i, id)
                 } else {
                     mealArray = []
                     loadMealData(i, id)
@@ -69,7 +69,7 @@ function loadMealData(i, id) {
             if (data != undefined && data.meals != null) {
                 mealArray = data.meals.reverse()
                 console.log(mealArray)
-                buildMealOverview(i)
+                buildMealOverview(i, id)
             } else {
                 mealArray = []
             }
@@ -79,20 +79,21 @@ function loadMealData(i, id) {
 } 
 
 
-function buildMealOverview(j) {
-    for (let i = j; i <= 5; i++) {
-        if (mealArray.length > 0) {
-            const meal = mealArray.pop()
-            buildMealCard(meal)
-        } else {
+function buildMealOverview(j, id) {
 
-            if (letterIndex > 25) {
-                mealArray = []
-                return
-            } 
-            return loadMealData(i)            
+        for (let i = j; i <= 5; i++) {
+            if (mealArray.length > 0) {
+                const meal = mealArray.pop()
+                buildMealCard(meal)
+            } else {
+
+                if (letterIndex > 25 || id != "All") {
+                    mealArray = []
+                    return
+                } 
+                return loadMealData(i, id)            
+            }
         }
-    }
 }    
 
 
@@ -147,7 +148,7 @@ function buildMealCard(mealData) {
 
 /************** LISTENER ***************/
 loadMoreButton.addEventListener("click", (event)=>{
-    buildMealOverview(0)
+    buildMealOverview(0, currentFilter)
 })
 
 filterButtonsContainer.addEventListener("click", (event) => {
@@ -157,7 +158,8 @@ filterButtonsContainer.addEventListener("click", (event) => {
         const activeFilter = document.getElementsByClassName("activeButton")
         activeFilter[0].classList.remove("activeButton")
         
-        currentFilter = event.target.id     
+        currentFilter = event.target.id   
+
         event.target.classList.add("activeButton")
 
         console.log(event.target.id)
